@@ -8,7 +8,7 @@ public class Module {
     }
 
     public String getModule_name() {
-        return this.module_name;
+        return module_name;
     }
 
     public void setModule_name(String module_name) {

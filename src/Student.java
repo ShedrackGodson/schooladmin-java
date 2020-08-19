@@ -45,6 +45,6 @@ public class Student extends User {
 
     @Override
     public String toString() {
-        return this.getName() + " is a " + this.getRole();
+        return this.getName();
     }
 }

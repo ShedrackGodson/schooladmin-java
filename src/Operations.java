@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class Operations {
     public static void chooseOperation() {
+//        Lecturer lecturer = new Lecturer();
+
+        Registering registerObj = new Registering();
         Scanner input = new Scanner(System.in);
         while(true){
             System.out.println("Choose Operation Below: \n1. Register Course\n2. Register Module\n3. Register Student" +
@@ -10,14 +13,29 @@ public class Operations {
             System.out.print("Enter choice: ");
             int operation = input.nextInt();
             if (operation == 1) {
-                System.out.println("Register Course");
+                registerObj.registerCourse();
             } else if (operation == 2) {
-                System.out.println("Register Module");
+                registerObj.registerModule();
             } else if (operation == 3) {
-                System.out.println("Register Student");
+                registerObj.registerStudent();
             } else if(operation ==4 ){
-                System.out.println("Always nice working with you, :)");
-                break;
+                registerObj.registerLecturer();
+            } else if(operation == 5){
+                System.out.println("The following are a list of Registered Students.");
+                System.out.println(registerObj.getStudents()); // Returned Boolean
+            } else if(operation == 6){
+                System.out.println("The following are a list of Registered Lecturers.");
+                System.out.println(registerObj.getLecturers()); // Returned Boolean
+                //Print Lecturer module
+//                System.out.println("The modules he works on are: ");
+//                for(Module module: lecturer.getModules())
+//                    System.out.print(module.getModule_name() + "\t");
+            } else if(operation == 7){
+                System.out.println("The following are a list of Registered Courses.");
+                System.out.println(registerObj.getCourses());
+            } else if(operation == 8){
+                System.out.println("The following are a list of Registered Modules.");
+                System.out.println(registerObj.getModules());
             } else if(operation == 9){
                 System.out.println("\tSession Ends!");
                 break;
