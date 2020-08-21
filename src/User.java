@@ -9,9 +9,4 @@ public abstract class User {
     // Name Getter
     public abstract String getName();
 
-    // Roles Getter
-    public abstract String getRoles();
-
-    // ID Getter
-    public abstract int getID();
 }
