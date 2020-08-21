@@ -1,15 +1,15 @@
 import java.util.ArrayList;
 
 public class Lecturer extends User{
-    private final int id;
-    private final String name;
-    private final String role;
+//    private final int id;
+//    private final String name;
+//    private final String role;
     protected ArrayList<Module> lecturer_modules;
 
     Lecturer(int id, String name, String role, ArrayList<Module> modules){
-        this.id = id;
-        this.name = name;
-        this.role = role;
+        super.id = id;
+        super.name = name;
+        super.roles = role;
         this.lecturer_modules = modules;
     }
 

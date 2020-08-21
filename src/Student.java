@@ -2,9 +2,9 @@ public class Student extends User {
 
     Course student_course;
     public Student(int id, String name, String role, Course student_course){
-        this.id = id;
-        this.name = name;
-        this.roles = role;
+        super.id = id;
+        super.name = name;
+        super.roles = role;
         this.student_course = student_course;
     }
     public Student(int id, String name, String role){
